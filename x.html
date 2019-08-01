@@ -30,25 +30,25 @@
 		</style>
 	</head>
 	<body>
+		<script>
+			window.onload=function(){
+				var yes=document.getElementById("yes");
+				var no=document.getElementById("no");
+				function yesc(){
+					alert("承认了吧，儿子真听话");
+				}
+				function nom(){
+        				var a=Math.Round(Math.Random()*100);
+        				var b=Math.Round(Math.Random()*100);
+					no.style.margin-top=a;
+        				no.style.margin-left=b;
+				}
+			}
+		</script>
 		<div>
 			<h1>你是傻逼吗？</h1>
-			<button id="yes">是</button>
-			<button id="no">不是</button>
+			<button id="yes" onclick="yesc();">是</button>
+			<button id="no" onmouseover="nom;">不是</button>
 		</div>
 	</body>
-	<script>
-		window.onload=function(){
-			var yes=document.getElementById("yes");
-			var no=document.getElementById("no");
-			yes.onclick=function(){
-				alert("承认了吧，儿子真听话");
-			}
-			no.onmouseover=function(){
-        var a=Math.Round(Math.Random()*100);
-        var b=Math.Round(Math.Random()*100);
-				no.style.margin-top=a;
-        no.style.margin-left=b;
-			}
-		}
-	</script>
 </html>
