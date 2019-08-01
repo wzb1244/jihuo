@@ -19,6 +19,7 @@
 				width: 80px;
 				height: 50px;
 				font-size: 20px;
+				display: block;
 			}
 			h1{
 				font-size: 1.5rem;
@@ -31,8 +32,9 @@ function yesc() {
     alert("承认了吧，儿子真听话");
 }
 function nom() {
-	var a = Math.round(Math.random()*100);
-    var b = Math.round(Math.random()*100);
+var a = Math.round(Math.random()*100);
+var b = Math.round(Math.random()*100);
+if(a>75)a=a-75;
     var no=document.getElementById("no");
     no.style.marginTop=a+"%";
     no.style.marginLeft=b+"%";
