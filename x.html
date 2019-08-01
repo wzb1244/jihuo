@@ -30,23 +30,18 @@
 		</style>
 	</head>
 	<body>
-		<script>
-			window.onload=function(){
-				var yes=document.getElementById("yes");
-				var no=document.getElementById("no");
-			}
-		</script>
-		<script>
-			yesc = function () {
-					alert("承认了吧，儿子真听话");
-				}
-			nom = function () {
-        			var a=Math.Round(Math.Random()*100);
-        			var b=Math.Round(Math.Random()*100);
-				no.style.margin-top=a;
-       				no.style.margin-left=b;
-			}
-		</script>
+<script>
+function yesc() {
+    alert("承认了吧，儿子真听话");
+}
+function nom() {
+	var a = Math.round(Math.random()*100);
+    var b = Math.round(Math.random()*100);
+    var no=document.getElementById("no");
+    no.style.top=a+"%";
+    no.style.left=b+"%";
+}
+</script>
 		<div>
 			<h1>你是傻逼吗？</h1>
 			<button id="yes" onclick="yesc();">是</button>
